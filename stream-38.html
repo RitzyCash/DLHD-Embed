@@ -3,24 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stream 130</title>
+    <title>Sky Sports Football</title>
     <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden;
+        body {
+            background-color: #2c3e50; /* Midnight theme */
+            color: #ecf0f1;
+            font-family: Arial, sans-serif;
         }
-        iframe {
-            width: 100vw;
-            height: 100vh;
+        .button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #e74c3c;
+            color: white;
             border: none;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .embedded-window {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            height: 80%;
+            border: 2px solid #ecf0f1;
         }
     </style>
 </head>
 <body>
-
-    <iframe src="https://thedaddy.to/embed/stream-38.php" allowfullscreen></iframe>
-
+    <a href="dlhd.html" class="button">&larr; Go Back</a>
+    <iframe class="embedded-window" src="https://thedaddy.to/embed/stream-38.php" frameborder="0"></iframe>
 </body>
 </html>
