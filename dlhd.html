@@ -3,89 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sky Sports Channels</title>
+    <title>Sky Sports Streams</title>
     <style>
         body {
+            background-color: #2c3e50; /* Midnight theme */
+            color: #ecf0f1;
             font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
             height: 100vh;
             margin: 0;
-            background-color: #f4f4f4;
         }
-
         .button-container {
             display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .button {
-            display: flex;
+            flex-wrap: wrap;
             justify-content: center;
-            padding: 15px 30px;
-            background-color: #1E5B96;
+        }
+        .button {
+            background-color: #34495e;
             color: white;
-            font-size: 18px;
             border: none;
-            border-radius: 8px;
-            cursor: pointer;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
             text-decoration: none;
-            width: 250px;
-            transition: background-color 0.3s;
+            border-radius: 5px;
+            width: 200px;
+            height: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-
-        .button:hover {
-            background-color: #0d4b7f;
-        }
-
         .button img {
-            margin-right: 10px;
-            width: 20px;
-            height: 20px;
+            width: 100%;
+            height: 80%;
+            object-fit: cover;
+            border-radius: 5px 5px 0 0;
+        }
+        .button p {
+            margin: 10px 0 0;
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
-
     <div class="button-container">
-        <!-- Sky Sports Football Button -->
-        <a href="stream-35.html" class="button">
-            Sky Sports Football
+        <a href="games/stream-35.html" class="button">
+            <img src="https://cdn-icons-png.flaticon.com/512/867/867329.png" alt="Sky Sports Football Thumbnail">
+            <p>Sky Sports Football</p>
         </a>
-
-        <!-- Sky Sports Premier League Button -->
-        <a href="stream-130.html" class="button">
-            Sky Sports Premier League
+        <a href="games/stream-130.html" class="button">
+            <img src="https://logos-world.net/wp-content/uploads/2023/02/Premier-League-Symbol-500x281.png" alt="Sky Sports Premier League Thumbnail">
+            <p>Sky Sports Premier League</p>
         </a>
-
-        <!-- Sky Sports F1 Button -->
-        <a href="stream-60.html" class="button">
-            Sky Sports F1
+        <a href="games/stream-60.html" class="button">
+            <img src="https://img.icons8.com/?size=512&id=SmycgNNUprJa&format=png" alt="Sky Sports F1 Thumbnail">
+            <p>Sky Sports F1</p>
         </a>
-
-        <!-- Sky Sports Racing Button -->
-        <a href="stream-554.html" class="button">
-            Sky Sports Racing
+        <a href="games/stream-554.html" class="button">
+            <img src="https://cdn-icons-png.flaticon.com/512/3295/3295243.png" alt="Sky Sports Racing Thumbnail">
+            <p>Sky Sports Racing</p>
         </a>
-
-        <!-- Sky Sports Main Event Button -->
-        <a href="stream-38.html" class="button">
-            Sky Sports Main Event
-        </a>
-
-        <!-- Sky Sports Action Button -->
-        <a href="stream-37.html" class="button">
-            Sky Sports Action
-        </a>
-
-        <!-- Additional button (future expansion) -->
-        <a href="future-stream.html" class="button">
-            More Channels Coming Soon
+        <a href="games/stream-38.html" class="button">
+            <img src="https://cdn-icons-png.flaticon.com/512/4358/4358450.png" alt="Sky Sports Main Event Thumbnail">
+            <p>Sky Sports Main Event</p>
         </a>
     </div>
-
 </body>
 </html>
